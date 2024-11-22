@@ -1,0 +1,58 @@
+﻿@model CMCS_v3.Models.User
+
+@{
+    ViewBag.Title = "Login";
+}
+<main>
+    <div id="MainLayout">
+        <div class="">
+            <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                    Sign in to your account
+                </h2>
+            </div>
+            <br />
+            <form method="POST">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="remember" value="true">
+
+                <div>
+                    <div>
+                        <label for="email-address" class="sr-only">Email address</label>
+                        <input class="inputField" id="email-address" name="email" type="email" autocomplete="email" required placeholder="Email Address">
+                    </div>
+                    <br />
+                    <div>
+                        <label for="password" class="sr-only">Password</label>
+                        <input class="inputField" id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm">
+                        <a href="#" class="forgotPassword">
+                            Forgot your password?
+                        </a>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                            Remember me
+                        </label>
+                    </div>
+                    <br />
+
+                    <div class="text-sm">
+                        <a href="@Url.Action("Register", "Users")" class="registerNewUser">
+                            Register-As-New-User?
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <button type="submit" class="btnSignIn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+

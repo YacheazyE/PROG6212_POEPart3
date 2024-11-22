@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <div class="row">
+        <div class="text-center">
+            <br />
+            <br />
+            <h1>Contract Monthly Claims System</h1> <!-- Main heading for the system -->
+            <br />
+            <br />
+            <br />
+
+            <h4>Hello, Welcome to Contract Monthly Claims</h4> <!-- Welcome message for the users -->
+            <p>Here you can LOGIN as an Academic Manager, Programme Coordinator, or Lecturer to Submit YOUR CLAIMS or Review Claims.</p><br /> <!-- Short description of the system's functionality -->
+            <br />
+            <br />
+            <!-- Button to direct lecturers to the claims submission page -->
+            <a href="@Url.Action("Login", "Users")" class="btnStyle">Login</a>
+
+            <!-- Button to direct administrators to the claim review page -->
+            <a href="@Url.Action("Register", "Users")" class="btnStyle">Register</a>
+        </div>
+    </div>
+</main>

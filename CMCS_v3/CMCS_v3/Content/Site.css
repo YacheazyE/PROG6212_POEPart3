@@ -1,0 +1,81 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/* Set the HTML element to ensure full height */
+html {
+    position: relative; /* Position relative for child elements */
+    min-height: 100%; /* Ensure the HTML covers the full viewport height */
+}
+
+/* Add bottom margin to the body for spacing */
+main {
+    margin-bottom: 60px; /* Space for the footer or other content */
+    background-image: url(../App_Data/bg_main.jpeg)
+}
+
+/* Styles for buttons with class btnStyle */
+.btnStyle {
+    color: white; /* Text color */
+    background-color: darkgreen; /* Background color */
+    padding: 15px 50px; /* Padding for top/bottom and left/right */
+    border-radius: 25px; /* Rounded corners */
+    margin-right: 50px; /* Space between buttons */
+}
+
+.btnSignIn {
+    color: white; /* Text color */
+    background-color: darkgreen; /* Background color */
+    padding: 15px 50px; /* Padding for top/bottom and left/right */
+    border-radius: 25px; /* Rounded corners */
+    justify-content: center;
+}
+
+
+#MainLayout {
+    display: flex;
+    padding: 10px;
+    background-color: lightsteelblue;
+    border: solid 3px;
+    border-color: ghostwhite;
+    border-radius: 15px;
+    justify-self: center;
+    justify-content: center;
+    width: 500px;
+    margin-top: 90px;
+}
+
+.inputField {
+    display: flex;
+    border-radius: 10px;
+    border: solid;
+    border-color: ghostwhite;
+    height: 40px;
+    width: 350px;
+}
+
+.forgotPassword {
+    display: flex;
+    justify-content: end;
+}
+
+.registerNewUser {
+    display: flex;
+    justify-self: center;
+}

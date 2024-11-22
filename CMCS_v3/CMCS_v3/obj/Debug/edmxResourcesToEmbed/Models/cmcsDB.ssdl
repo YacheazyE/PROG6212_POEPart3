@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cmcsDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Claims">
+    <Key>
+      <PropertyRef Name="ClaimID" />
+    </Key>
+    <Property Name="ClaimID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SubmittedDate" Type="datetime" />
+    <Property Name="HoursWorked" Type="int" />
+    <Property Name="HourlyRate" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="ClaimDocumentPath" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="155" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_claim_user">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Claims" Type="Self.Claims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Claims">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="cmcsDBModelStoreContainer">
+    <EntitySet Name="Claims" EntityType="Self.Claims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_claim_user" Association="Self.fk_claim_user">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Claims" EntitySet="Claims" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
