@@ -12,7 +12,7 @@ namespace CMCS_v3.Controllers
 {
     public class ClaimsController : Controller
     {
-        private cmcsDBEntities db = new cmcsDBEntities();
+        private cmcsDBEntities1 db = new cmcsDBEntities1();
 
         // GET: Claims
         public ActionResult Index()
@@ -38,12 +38,12 @@ namespace CMCS_v3.Controllers
         // GET: Claims/Create
         public ActionResult Create()
         {
-            var claim = new Claim
-            {
-                Status = "Pending" 
-            };
+            //var claim = new Claim
+            //{
+            //    Status = "Pending" 
+            //};
 
-            return View(claim);
+            return View();
         }
 
 
@@ -106,7 +106,7 @@ namespace CMCS_v3.Controllers
         // POST: Claims/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ClaimID,SubmittedDate,HoursWorked,HourlyRate,ClaimDocumentPath,Status,UserID")] Claim claim)
+        public ActionResult Edit([Bind(Include = "ClaimID,SubmittedDate,HoursWorked,HourlyRate,ClaimDocumentPath,Status")] Claim claim)
         {
             if (ModelState.IsValid)
             {

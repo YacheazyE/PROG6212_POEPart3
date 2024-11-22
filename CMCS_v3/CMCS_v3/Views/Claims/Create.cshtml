@@ -7,17 +7,17 @@
 <h2>Create Claim</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.SubmittedDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SubmittedDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.SubmittedDate, new { htmlAttributes = new { @class = "form-control", type = "datetime-local" } })
                 @Html.ValidationMessageFor(model => model.SubmittedDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -41,16 +41,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ClaimDocumentPath, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <!-- File Upload -->
                 <input type="file" name="ClaimDocumentPath" class="form-control" />
                 @Html.ValidationMessageFor(model => model.ClaimDocumentPath, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <span class="form-control">@Model.Status</span>
             </div>
         </div>
 
@@ -68,4 +60,5 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
-}
+
+    }
