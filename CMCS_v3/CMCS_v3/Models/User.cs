@@ -18,7 +18,7 @@ namespace CMCS_v3.Models
         public System.Guid UserID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public DropDownList Role { get; set; }
+        public string Role { get; set; }
 
         public string Email { get; set; }
         public string Password { get; set; }

@@ -12,7 +12,7 @@
 
     <div id="MainLayout">
 
-        @using (Html.BeginForm())
+        @using (Html.BeginForm("Create", "Users", FormMethod.Post))
         {
             @Html.AntiForgeryToken()
 
@@ -39,16 +39,7 @@
                 <div class="form-group">
                     @Html.LabelFor(model => model.Role, htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
-                        @Html.DropDownListFor(model => model.Role,
-                            new SelectList(new[]
-                            {
-                                new SelectListItem() { Text = "Lecturer", Value = "Lecturer" },
-                                new SelectListItem() { Text = "Academic Admin", Value = "Academic Admin" },
-                                new SelectListItem() { Text = "Programme Co-ordinator", Value = "Programme Co-ordinator" },
-                                new SelectListItem() { Text = "HR", Value = "HR" }
-                            },
-                            "Text", "Value"),
-                            new { @class = "inputField form-control" })
+                        @Html.EditorFor(model => model.Role, new { htmlAttributes = new { @class = " inputField form-control" } })
                         @Html.ValidationMessageFor(model => model.Role, "", new { @class = "text-danger" })
                     </div>
                 </div>

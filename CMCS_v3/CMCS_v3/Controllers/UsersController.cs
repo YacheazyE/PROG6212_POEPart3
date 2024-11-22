@@ -37,10 +37,10 @@ namespace CMCS_v3.Controllers
         }
 
         // GET: Users/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
 
         // POST: Users/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
@@ -133,7 +133,45 @@ namespace CMCS_v3.Controllers
         
         public ActionResult Register()
         {
+            
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(string email, string password, bool remember)
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                // Optionally, add a model error if the email or password is empty
+                ModelState.AddModelError("", "Email or password cannot be empty.");
+                return View();
+            }
+
+            // Find the user in the database
+            var user = db.Users.SingleOrDefault(u => u.Email == email);
+            if (user == null)
+            {
+                // If no user found
+                ModelState.AddModelError("", "Invalid login attempt.");
+                return View();
+            }
+
+            // Check if the password is correct
+            if (user.Password == (password)) // Assuming you've stored passwords as hashed values
+            {
+                // Optionally, you can use authentication cookies here to log the user in
+                // For now, we are just assuming a simple check
+
+                // Redirect to another page or dashboard
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                // Invalid password
+                ModelState.AddModelError("", "Invalid login attempt.");
+                return View();
+            }
         }
     }
 }
