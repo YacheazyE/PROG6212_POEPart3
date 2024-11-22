@@ -229,6 +229,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\background monthly claims.jpeg" />
+    <Content Include="Images\bg_main.jpeg" />
     <Content Include="Models\ClaimsModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ClaimsModel.edmx</DependentUpon>
