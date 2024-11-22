@@ -37,10 +37,22 @@ namespace CMCS_v3.Controllers
         }
 
         // GET: Users/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
+        public ActionResult Create()
+        {
+            // Creating a list of roles
+            var roles = new List<string>
+    {
+        "Lecturer",
+        "Academic Admin",
+        "Programme Coordinator"
+    };
+
+            // Passing the roles to the view via ViewBag
+            ViewBag.Roles = new SelectList(roles);
+
+            return View();
+        }
+
 
         // POST: Users/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
@@ -54,7 +66,7 @@ namespace CMCS_v3.Controllers
                 user.UserID = Guid.NewGuid();
                 db.Users.Add(user);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Login");
             }
 
             return View(user);
@@ -136,7 +148,6 @@ namespace CMCS_v3.Controllers
             
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Login(string email, string password, bool remember)
@@ -158,13 +169,19 @@ namespace CMCS_v3.Controllers
             }
 
             // Check if the password is correct
-            if (user.Password == (password)) // Assuming you've stored passwords as hashed values
+            if (user.Password == password) // Assuming you've stored passwords as plain text for simplicity
             {
-                // Optionally, you can use authentication cookies here to log the user in
-                // For now, we are just assuming a simple check
+                // Check if the user role is "Lecturer"
+                if (user.Role == "Lecturer")
+                {
+                    // Redirect to the Claims Create action
+                    return RedirectToAction("Create", "Claims");
+                }
 
-                // Redirect to another page or dashboard
-                return RedirectToAction("Index", "Home");
+                // You can add additional role checks here if needed (e.g. Academic Admin, Programme Coordinator)
+
+                // If the user is not a Lecturer, redirect to a default dashboard or homepage
+                return RedirectToAction("Index", "Claims"); // Or any other page you prefer
             }
             else
             {

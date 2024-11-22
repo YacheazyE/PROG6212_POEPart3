@@ -42,15 +42,19 @@
                     <br />
 
                     <div class="text-sm">
-                        <a href="@Url.Action("Register", "Users")" class="registerNewUser">
+                        <a href="@Url.Action("Create", "Users")" class="registerNewUser">
                             Register-As-New-User?
                         </a>
                     </div>
                 </div>
                 <br />
+                @using (Html.BeginForm("Create", "Claims", FormMethod.Get))
+                {
                 <div>
                     <button type="submit" class="btnSignIn">Sign In</button>
                 </div>
+                }
+
             </form>
         </div>
     </div>

@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CMCS_v3.Models;
 using EntityState = System.Data.Entity.EntityState;
+
 
 namespace CMCS_v3.Controllers
 {
@@ -39,22 +38,51 @@ namespace CMCS_v3.Controllers
         // GET: Claims/Create
         public ActionResult Create()
         {
-            return View();
+            var claim = new Claim
+            {
+                Status = "Pending" 
+            };
+
+            return View(claim);
         }
 
+
         // POST: Claims/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ClaimID,SubmittedDate,HoursWorked,HourlyRate,ClaimDocumentPath,Status,UserID")] Claim claim)
+        public ActionResult Create([Bind(Include = "ClaimID,SubmittedDate,HoursWorked,HourlyRate,Status")] Claim claim, HttpPostedFileBase ClaimDocumentPath)
         {
             if (ModelState.IsValid)
             {
-                claim.ClaimID = Guid.NewGuid();
-                db.Claims.Add(claim);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                try
+                {
+                    // Handle file upload if there is a file
+                    if (ClaimDocumentPath != null && ClaimDocumentPath.ContentLength > 0)
+                    {
+                        // Generate a unique file name
+                        var fileName = Path.GetFileName(ClaimDocumentPath.FileName);
+                        var path = Path.Combine(Server.MapPath("~/UploadedFiles"), fileName);
+
+                        // Save the file to the server
+                        ClaimDocumentPath.SaveAs(path);
+
+                        // Save the file path in the Claim model
+                        claim.ClaimDocumentPath = Path.Combine("/UploadedFiles", fileName);
+                    }
+
+                    // Generate a new ClaimID
+                    claim.ClaimID = Guid.NewGuid();
+
+                    // Add the claim to the database and save changes
+                    db.Claims.Add(claim);
+                    db.SaveChanges();
+
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Error saving to the database: " + ex.Message);
+                }
             }
 
             return View(claim);
@@ -76,8 +104,6 @@ namespace CMCS_v3.Controllers
         }
 
         // POST: Claims/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ClaimID,SubmittedDate,HoursWorked,HourlyRate,ClaimDocumentPath,Status,UserID")] Claim claim)

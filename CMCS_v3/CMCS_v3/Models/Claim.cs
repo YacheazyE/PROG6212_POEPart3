@@ -20,6 +20,5 @@ namespace CMCS_v3.Models
         public Nullable<decimal> HourlyRate { get; set; }
         public string ClaimDocumentPath { get; set; }
         public string Status { get; set; }
-        public System.Guid UserID { get; set; }
     }
 }
