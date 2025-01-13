@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\models\\claims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\models\\claims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\services\\claimsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\services\\claimsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\services\\iclaimsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\services\\iclaimsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|c:\\users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB070F27-D87A-4450-8CD3-89E10CC5FD89}|cmcs_api\\cmcs_api.csproj|solutionrelative:cmcs_api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Program.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\Program.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Program.cs",
+              "RelativeToolTip": "cmcs_api\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwCMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T07:26:19.379Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClaimsService.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Services\\ClaimsService.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\Services\\ClaimsService.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Services\\ClaimsService.cs",
+              "RelativeToolTip": "cmcs_api\\Services\\ClaimsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T06:37:34.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IClaimsService.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Services\\IClaimsService.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\Services\\IClaimsService.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Services\\IClaimsService.cs",
+              "RelativeToolTip": "cmcs_api\\Services\\IClaimsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T06:34:17.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\appsettings.json",
+              "RelativeDocumentMoniker": "cmcs_api\\appsettings.json",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\appsettings.json",
+              "RelativeToolTip": "cmcs_api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-12T13:25:09.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClaimsController.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Controllers\\ClaimsController.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\Controllers\\ClaimsController.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Controllers\\ClaimsController.cs",
+              "RelativeToolTip": "cmcs_api\\Controllers\\ClaimsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T01:20:14.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Claims.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Models\\Claims.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\Models\\Claims.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Models\\Claims.cs",
+              "RelativeToolTip": "cmcs_api\\Models\\Claims.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T01:11:47.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "cmcs_api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T01:01:31.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\ApplicationDbContext.cs",
+              "RelativeToolTip": "cmcs_api\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T01:08:37.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "cmcs_api\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\yachp\\source\\repos\\cmcs_api\\cmcs_api\\Models\\Users.cs",
+              "RelativeToolTip": "cmcs_api\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T00:53:36.157Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

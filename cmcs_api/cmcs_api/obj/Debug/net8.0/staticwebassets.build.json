@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5aS9gwxn0bdEOFHsbo2+PsDWPnXVW3Ziuf8u64zVuxE=",
+  "Source": "cmcs_api",
+  "BasePath": "_content/cmcs_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
